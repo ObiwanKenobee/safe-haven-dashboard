@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { UserRole } from "../auth/AuthForm";
+import { cn } from "@/lib/utils";
 
 export const DashboardHeader = () => {
   const [userRole, setUserRole] = useState<UserRole>("public");
@@ -123,3 +124,4 @@ export const DashboardHeader = () => {
     </header>
   );
 };
+

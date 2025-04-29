@@ -3,6 +3,7 @@ import { PropsWithChildren, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { DashboardHeader } from "./DashboardHeader";
 import { DashboardSidebar } from "./DashboardSidebar";
+import { cn } from "@/lib/utils";
 
 export const DashboardLayout = ({ children }: PropsWithChildren) => {
   const navigate = useNavigate();
@@ -27,3 +28,4 @@ export const DashboardLayout = ({ children }: PropsWithChildren) => {
     </div>
   );
 };
+
