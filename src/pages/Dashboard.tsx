@@ -5,6 +5,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { DashboardLayout } from "@/components/dashboard/DashboardLayout";
 import { UserRole } from "@/components/auth/AuthForm";
 import { ChartBar, Shield, Users, Database } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export const Dashboard = () => {
   const { role } = useParams<{ role?: string }>();
